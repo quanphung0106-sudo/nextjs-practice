@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  padding: 20px 10px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.desc {
+  font-size: 24px;
+  color: #444;
+  width: 70%;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    text-align: center;
+  }
+
+  .desc {
+    width: 90%;
+    text-align: center;
+  }
+}
