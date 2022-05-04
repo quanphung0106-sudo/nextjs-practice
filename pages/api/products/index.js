@@ -3,7 +3,9 @@ import Product from "../../../models/Product";
 import mongoose from "mongoose";
 
 export default async function handler(req, res) {
-  const { method } = req;
+  const { method, cookies } = req;
+
+  const token = cookies.token;
 
   dbConnect();
 
@@ -24,6 +26,9 @@ export default async function handler(req, res) {
     }
   }
   if (method === "DELETE") {
+    // if (!token || token !== process.env.TOKEN) {
+    //   return res.status(401).json("Not authenticated!");
+    // }
     try {
       const product = await Product.remove({});
       res.status(201).json("Deleted all data");
