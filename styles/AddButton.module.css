@@ -1,0 +1,17 @@
+.mainAddButton {
+  padding-top: 25px;
+  margin-left: 25px;
+}
+
+.button {
+  background-color: #d1441e;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.button:hover {
+  opacity: 0.9;
+}

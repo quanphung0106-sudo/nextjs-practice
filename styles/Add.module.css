@@ -1,0 +1,109 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(245, 240, 240, 0.86);
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 500px;
+  min-height: 500px;
+  background-color: #fff;
+  padding: 15px 50px;
+  border-radius: 5px;
+}
+
+.close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #222;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close:hover {
+  opacity: 0.8;
+}
+
+.item {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+  margin: 10px 0;
+}
+
+.priceContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputSm {
+  width: 25%;
+  margin-right: 10px;
+}
+
+.button {
+    padding: 5px 10px;
+}
+
+.addButton {
+    border: none;
+    padding: 10px 20px;
+    background-color: #f1441e;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.addButton:hover {
+    opacity: 0.9;
+}
+
+.extra {
+    margin-bottom: 15px;
+}
+
+.extraItems {
+    margin-bottom: 15px;
+}
+
+.extraItem {
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #f1441e;
+    padding: 5px;
+    border-radius: 5px;
+}
